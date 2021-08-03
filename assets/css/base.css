@@ -12,14 +12,14 @@
     padding: 0;
     margin: 0;
     box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
 }
 
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Satisfy', cursive; */
 }
