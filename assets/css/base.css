@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Satisfy&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --main: #3FD0D4;
+    --text: #787878;
+    --header: #212121;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Satisfy', cursive; */
+}
