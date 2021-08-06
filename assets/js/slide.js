@@ -3,7 +3,7 @@ $('.owl-1').owlCarousel({
     margin: 10,
     nav: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     // animateOut: 'fadeOut',
     animateOut: 'fadeOut',
     mouseDrag: false,
