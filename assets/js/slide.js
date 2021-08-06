@@ -1,14 +1,15 @@
-$('.owl-carousel').owlCarousel({
+$('.owl-1').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
     dots: false,
     autoplay: true,
-    animateIn: 'fadeIn',
+    // animateOut: 'fadeOut',
+    animateOut: 'fadeOut',
+    mouseDrag: false,
+    touchDrag: false,
     autoplayTimeout: 10000,
-    autoplaySpeed: 10000,
-    navSpeed: 5000,
-    rewind: true,
+    navSpeed: 1000,
     responsive: {
         0: {
             items: 1
@@ -18,6 +19,27 @@ $('.owl-carousel').owlCarousel({
         },
         1000: {
             items: 1
+        }
+    }
+})
+
+$('.owl-2').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 10000,
+    navSpeed: 1000,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 4
         }
     }
 })

@@ -24,13 +24,13 @@ html {
     /* font-family: 'Satisfy', cursive; */
 }
 
-@keyframes fadeIn {
+@keyframes fadeOut {
     0% {
-        opacity: 0;
+        opacity: 1;
     }
 
     100% {
-        opacity: 1;
+        opacity: 0;
     }
 }
 
@@ -41,5 +41,17 @@ html {
 
     100% {
         transform: scale(1.5);
+    }
+}
+
+@keyframes floatIn {
+    0% {
+        transform: translateY(80%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
