@@ -23,3 +23,23 @@ html {
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Satisfy', cursive; */
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
