@@ -10,12 +10,12 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
-    <link rel="stylesheet" href="./assets/js/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/js/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/js/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/js/owlcarousel/assets/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -498,7 +498,7 @@
             <!-- main slide -->
             <div class="slide__main">
                 <div class="slide__overlay"></div>
-                <div class="owl-1 owl-carousel owl-theme">
+                <div id="owl-1" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="slide__img">
                             <img src="./assets/img/slide-1.jpg" alt="">
@@ -536,7 +536,7 @@
         <slide id="sub-slide">
             <!-- sub slide -->
             <div class="slide__sub">
-                <div class="owl-2 owl-carousel owl-theme">
+                <div id="owl-2" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="slide__sub-container">
                             <div class="slide__sub-img">
@@ -783,6 +783,7 @@
 
         <!-- begin content -->
         <content id="content">
+            <!-- content 1 -->
             <div class="content__section">
                 <div class="grid wide">
                     <div class="content__common">
@@ -813,6 +814,7 @@
                 </div>
             </div>
 
+            <!-- content 2 -->
             <div class="content__review">
                 <div class="content__parallax">
                     <div class="content__review-heading">
@@ -824,8 +826,9 @@
                             </p>
                         </div>
                     </div>
+                    <!-- slide -->
                     <div class="content__review-slide">
-                        <div class="owl-3 owl-carousel owl-theme">
+                        <div id="owl-3" class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="review__slide-wrap">
                                     <div class="review__slide-avatar">
@@ -843,6 +846,294 @@
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                         </p>
                                         <p class="review__slide-name">Carol Silva</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="review__slide-wrap">
+                                    <div class="review__slide-avatar">
+                                        <img src="./assets/img/user-img-2.png" alt="">
+                                    </div>
+                                    <div class="review__slide-desc">
+                                        <a href="" class="reivew__slide-link">Barcelona</a>
+                                        <div class="review__slide-rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="review__slide-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p class="review__slide-name">James Fisher</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="review__slide-wrap">
+                                    <div class="review__slide-avatar">
+                                        <img src="./assets/img/user-img-3.png" alt="">
+                                    </div>
+                                    <div class="review__slide-desc">
+                                        <a href="" class="reivew__slide-link">Kaohsiung</a>
+                                        <div class="review__slide-rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="review__slide-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p class="review__slide-name">Roger Brooks</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="review__slide-wrap">
+                                    <div class="review__slide-avatar">
+                                        <img src="./assets/img/user-img-4.png" alt="">
+                                    </div>
+                                    <div class="review__slide-desc">
+                                        <a href="" class="reivew__slide-link">Taipei</a>
+                                        <div class="review__slide-rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="review__slide-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p class="review__slide-name">Susan Day</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="review__slide-wrap">
+                                    <div class="review__slide-avatar">
+                                        <img src="./assets/img/user-img-5.png" alt="">
+                                    </div>
+                                    <div class="review__slide-desc">
+                                        <a href="" class="reivew__slide-link">Tarragona</a>
+                                        <div class="review__slide-rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="review__slide-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p class="review__slide-name">Carl Moore</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="review__slide-wrap">
+                                    <div class="review__slide-avatar">
+                                        <img src="./assets/img/user-img-6.png" alt="">
+                                    </div>
+                                    <div class="review__slide-desc">
+                                        <a href="" class="reivew__slide-link">Madrid</a>
+                                        <div class="review__slide-rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="review__slide-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p class="review__slide-name">Sam Smith</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="review__slide-wrap">
+                                    <div class="review__slide-avatar">
+                                        <img src="./assets/img/user-img-7.png" alt="">
+                                    </div>
+                                    <div class="review__slide-desc">
+                                        <a href="" class="reivew__slide-link">Holland Canals</a>
+                                        <div class="review__slide-rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="review__slide-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p class="review__slide-name">Ema Cooper</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content 3 -->
+            <div class="content__section">
+                <div class="grid wide">
+                    <div class="content__common">
+                        <p class="content__section-heading">Enjoy yor</p>
+                        <h2 class="content__section-sub-heading">Winter Holiday</h2>
+                        <p class="content__section-text l-6 l-o-3 mt15">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+                            lorem ipsum.
+                        </p>
+                    </div>
+                    <div class="content__enjoy">
+                        <div class="row">
+                            <div class="col l-3">
+                                <div class="content__enjoy-column">
+                                    <img src="./assets/img/h1-custom-icon-img-1.png" alt="">
+                                    <h3 class="content__enjoy-heading mt15">Restaurants</h3>
+                                    <p class="content__enjoy-text mt15">
+                                        Aenean commodo ligula eget dolor. Lorem ipsum
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="content__enjoy-column">
+                                    <img src="./assets/img/h1-custom-icon-img-2.png" alt="">
+                                    <h3 class="content__enjoy-heading mt15">Sightseeing</h3>
+                                    <p class="content__enjoy-text mt15">
+                                        Aenean commodo ligula eget dolor. Lorem ipsum
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="content__enjoy-column">
+                                    <img src="./assets/img/h1-custom-icon-img-3.png" alt="">
+                                    <h3 class="content__enjoy-heading mt15">Shops & Boutiques</h3>
+                                    <p class="content__enjoy-text mt15">
+                                        Aenean commodo ligula eget dolor. Lorem ipsum
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="content__enjoy-column">
+                                    <img src="./assets/img/h1-custom-icon-img-4.png" alt="">
+                                    <h3 class="content__enjoy-heading mt15">Where to Stay</h3>
+                                    <p class="content__enjoy-text mt15">
+                                        Aenean commodo ligula eget dolor. Lorem ipsum
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content 4 -->
+            <div class="content-4">
+                <div id="owl-4" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="content-4__container">
+                            <img src="./assets/img/our-team-img-6-1.jpg" alt="Avatar" class="image">
+                            <div class="content-4__overley">
+                                <div class="content-4__text">
+                                    <p class="content-4__text-name">Joe Avery</p>
+                                    <p class="content-4__text-desc mt15">
+                                        Aenean commodo ligula eget dolor. Lorem ipsum
+                                    </p>
+                                    <div class="content-4__text-icon mt15">
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-4__container">
+                            <img src="./assets/img/our-team-img-7-1.jpg" alt="Avatar" class="image">
+                            <div class="content-4__overley">
+                                <div class="content-4__text">
+                                    <p class="content-4__text-name">Bella Larson</p>
+                                    <p class="content-4__text-desc mt15">
+                                        Aenean commodo ligula eget dolor. Lorem ipsum
+                                    </p>
+                                    <div class="content-4__text-icon mt15">
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-4__container">
+                            <img src="./assets/img/our-team-img-8-1.jpg" alt="Avatar" class="image">
+                            <div class="content-4__overley">
+                                <div class="content-4__text">
+                                    <p class="content-4__text-name">Jack Burton</p>
+                                    <p class="content-4__text-desc mt15">
+                                        Aenean commodo ligula eget dolor. Lorem ipsum
+                                    </p>
+                                    <div class="content-4__text-icon mt15">
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content-4__container">
+                            <img src="./assets/img/our-team-img-9.jpg" alt="Avatar" class="image">
+                            <div class="content-4__overley">
+                                <div class="content-4__text">
+                                    <p class="content-4__text-name">Grace West</p>
+                                    <p class="content-4__text-desc mt15">
+                                        Aenean commodo ligula eget dolor. Lorem ipsum
+                                    </p>
+                                    <div class="content-4__text-icon mt15">
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="" class="content-4__text-link">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
