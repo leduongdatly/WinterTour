@@ -435,7 +435,7 @@
 
 .content__common {
     text-align: center;
-    padding: 90px 0 20px;
+    padding: 90px 0 40px;
 }
 
 .content__section-heading {
@@ -445,10 +445,162 @@
     color: var(--main);
 }
 
+.content__reivew-sub-heading,
 .content__section-sub-heading {
     font-size: 6.5rem;
     line-height: 6.5rem;
     color: var(--header);
     font-weight: 600;
     margin-top: 10px;
+}
+
+.content__reivew-text,
+.content__section-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--header);
+    margin-bottom: 40px;
+}
+
+.content__video {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.content__video img {
+    width: 100%;
+    display: block;
+}
+
+.content__video-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.content__video:hover .modal__content {
+    transform: scale(1.05);
+}
+
+.modal__content i {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.content__wrap {
+    text-align: center;
+}
+
+.content__section-btn {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: var(--main);
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 15px 30px;
+    transition: 0.5s;
+}
+
+.content__section-btn:hover {
+    background-color: #1cb6ba;
+}
+
+.content__parallax {
+    /* The image used */
+    background-image: url(../img/skiing-parallax-1.jpg);
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content__review-heading {
+    text-align: center;
+    padding: 90px 0 40px;
+}
+
+.content__reivew-sub-heading {
+    color: var(--white);
+}
+
+.content__reivew-text {
+    width: 50%;
+    margin: 20px auto 0 auto;
+    color: var(--white);
+}
+
+.review__slide-wrap {
+    background-color: var(--white);
+    display: flex;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.review__slide-avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.review__slide-desc {
+    margin-left: 20px;
+}
+
+.reivew__slide-link {
+    display: block;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    color: var(--header);
+    transition: 0.4s;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.reivew__slide-link:hover {
+    color: var(--main);
+}
+
+.review__slide-rate {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: var(--main);
+    margin-bottom: 15px;
+}
+
+.review__slide-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--header);
+    margin-bottom: 15px;
+}
+
+.review__slide-name {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--header);
 }
