@@ -1,16 +1,59 @@
-var modal = document.getElementById('modal')
+// Search btn
+var modalSearch = document.getElementById('modal__search')
 
-function openModal() {
-    modal.style.display = 'block'
-    modal.style.opacity = 1
+function openModalSearch() {
+    modalSearch.style.display = 'block'
 }
 
-function closeModal() {
-    modal.style.display = 'none'
+function closeModalSearch() {
+    modalSearch.style.display = 'none'
+}
+
+window.addEventListener('click', (event) => {
+    if (event.target == modalSearch) {
+        modalSearch.style.display = "none";
+    }
+})
+
+// Menu btn
+var modalMenu = document.querySelector('.modal__menu-overlay')
+var menu = document.querySelector('.modal__menu-wrap')
+
+function openModalMenu() {
+    menu.style.right = 0
+    modalMenu.style.display = 'block'
+}
+
+function closeModalMenu() {
+    menu.style.right = '100%'
+    modalMenu.style.display = 'none'
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = 'none'
+    if (event.target == modalMenu) {
+        modalMenu.style.display = 'none'
+        menu.style.right = '100%'
     }
 }
+
+window.onscroll = function() {
+    if (window.scrollY > menu.clientHeight) {
+        modalMenu.style.display = 'none'
+        menu.style.right = '100%'
+    }
+}
+
+// Modal Video
+var modalVideo = document.querySelector('.modal__video')
+
+function openModalVideo() {
+    modalVideo.style.visibility = 'visible'
+    modalVideo.style.opacity = '1'
+}
+
+window.addEventListener('click', (event) => {
+    if (event.target == modalVideo) {
+        modalVideo.style.visibility = 'hidden'
+        modalVideo.style.opacity = '0'
+    }
+})

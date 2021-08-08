@@ -479,10 +479,10 @@
                                     <p>No product in the cart</p>
                                 </div>
                             </div>
-                            <div class="header__control-item" onclick="openModal()">
+                            <div class="header__control-item" onclick="openModalSearch()">
                                 <i class="fas fa-search"></i>
                             </div>
-                            <div class="header__control-item">
+                            <div class="header__control-item" onclick="openModalMenu()">
                                 <i class="fas fa-bars"></i>
                             </div>
                         </div>
@@ -492,24 +492,82 @@
         </header>
         <!-- end header -->
 
-        <!-- begin modal -->
-        <div id="modal" class="modal">
+        <!-- begin modal search -->
+        <div id="modal__search" class="modal__search">
             <!-- Modal content -->
-            <div class="modal-close">
-                <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal__search-close">
+                <span class="close" onclick="closeModalSearch()">&times;</span>
             </div>
-            <div class="modal-content l-6 l-o-3">
+            <div class="modal__search-content l-6 l-o-3">
                 <form action="">
-                    <div class="modal-content-input l-9">
+                    <div class="modal__search-content-input l-9">
                         <input type="text" placeholder="Search...">
                     </div>
-                    <div class="modal-content-btn l-3">
+                    <div class="modal__search-content-btn l-3">
                         <button type="button">Find now</button>
                     </div>
                 </form>
             </div>
         </div>
-        <!-- end modal -->
+        <!-- end modal search -->
+
+        <!-- begin modal menu -->
+        <div class="modal__menu">
+            <div class="modal__menu-overlay"></div>
+            <div class="modal__menu-wrap">
+                <div class="modal__menu-close">
+                    <span class="close" onclick="closeModalMenu()">&times;</span>
+                </div>
+                <div class="modal__menu-body">
+                    <div class="modal__menu-logo">
+                        <img src="./assets/img/logo.png" alt="">
+                    </div>
+                    <div class="modal__menu-text">
+                        <img src="./assets/img/sidearea-img-2.png" alt="">
+                    </div>
+                    <a href="" class="modal__menu-location">
+                        <img src="./assets/img/sidearea-img.jpg" alt="">
+                    </a>
+                    <div class="modal__menu-desc">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis theme natoque
+                        </p>
+                    </div>
+                    <div class="modal__menu-search">
+                        <h2>Find your destination</h2>
+                        <form action="">
+                            <div class="modal__menu-input">
+                                <input type="text" placeholder="Search...">
+                            </div>
+                            <div class="modal__menu-btn">
+                                <button>
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal__menu-social">
+                        <h2>Follow me</h2>
+                        <div class="modal__menu-icon">
+                            <a href="" class="modal__menu-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="modal__menu-link">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a href="" class="modal__menu-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="modal__menu-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal menu -->
 
         <!-- begin slide -->
         <slide id="slide">
@@ -808,7 +866,7 @@
                         <h2 class="content__section-sub-heading">Winter Sports</h2>
                     </div>
                     <div class="content__wrap">
-                        <div class="content__video l-8 l-o-2">
+                        <div class="content__video l-8 l-o-2" onclick="openModalVideo()">
                             <img src="./assets/img/h-skiing-video-1.jpg" alt="">
                             <div class="content__video-modal">
                                 <div class="modal__content">
@@ -1240,6 +1298,17 @@
             </div>
         </content>
         <!-- end content -->
+
+        <!-- begin modal video -->
+        <div class="modal__video">
+            <div class="modal__video-content">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/5u0D7D5Jcro"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- end modal video -->
 
         <!-- begin footer -->
         <footer id="footer">

@@ -882,8 +882,8 @@
     cursor: pointer;
 }
 
-/* modal */
-.modal {
+/* modal search */
+.modal__search {
     display: none;
     position: fixed;
     z-index: 2;
@@ -897,7 +897,7 @@
     animation: fadeIn ease 0.5s both;
 }
 
-.modal-close {
+.modal__search-close {
     float: right;
     padding-top: 40px;
     padding-right: 10px;
@@ -907,7 +907,7 @@
     color: var(--white);
 }
 
-.modal-content {
+.modal__search-content {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -915,12 +915,12 @@
     right: 0;
 }
 
-.modal-content form {
+.modal__search-content form {
     display: flex;
     align-items: center;
 }
 
-.modal-content-input input {
+.modal__search-content-input input {
     width: 100%;
     padding: 20px;
     border: none;
@@ -929,7 +929,7 @@
     line-height: 1.4rem;
 }
 
-.modal-content-btn button {
+.modal__search-content-btn button {
     display: block;
     width: 100%;
     padding: 24px;
@@ -944,6 +944,188 @@
     transition: 1s;
 }
 
-.modal-content-btn button:hover {
+.modal__search-content-btn button:hover {
     background-color: #1cb6ba;
+}
+
+/* modal menu */
+.modal__menu-overlay {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal__menu-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.modal__menu-wrap {
+    width: 460px;
+    padding: 40px;
+    background-color: var(--white);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 100%;
+    margin: 0;
+    z-index: 3;
+    transition: 0.5s;
+    overflow: scroll;
+}
+
+.modal__menu-close {
+    display: flow-root;
+}
+
+.modal__menu-close span {
+    display: block;
+    float: right;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.modal__menu-logo,
+.modal__menu-text {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.modal__menu-logo img,
+.modal__menu-text img {
+    width: 100%;
+}
+
+.modal__menu-location {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.modal__menu-location img {
+    width: 100%;
+}
+
+.modal__menu-desc {
+    margin-bottom: 20px;
+}
+
+.modal__menu-desc p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #9A9A9A;
+    text-align: center;
+}
+
+.modal__menu-search {
+    margin: 40px 0;
+}
+
+.modal__menu-search h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.modal__menu-search form {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.modal__menu-input {
+    width: 80%;
+}
+
+.modal__menu-input input {
+    width: 100%;
+}
+
+.modal__menu-btn {
+    width: 20%;
+}
+
+.modal__menu-btn button {
+    width: 100%;
+    background-color: var(--main);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal__menu-btn button:hover {
+    background-color: #1cb6ba;
+}
+
+.modal__menu-input input,
+.modal__menu-btn button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.modal__menu-social {
+    text-align: center;
+}
+
+.modal__menu-social h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.modal__menu-icon {
+    margin: 20px 0;
+}
+
+.modal__menu-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.modal__menu-link:hover {
+    background-color: #1cb6ba;
+}
+
+/* modal__video */
+.modal__video {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+.modal__video-content {
+    width: 853px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    z-index: 3;
 }
