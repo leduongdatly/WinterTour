@@ -20,7 +20,6 @@
 
 <body>
     <div class="app">
-
         <!-- begin header -->
         <header id="header">
             <div class="wide">
@@ -480,7 +479,7 @@
                                     <p>No product in the cart</p>
                                 </div>
                             </div>
-                            <div class="header__control-item">
+                            <div class="header__control-item" onclick="openModal()">
                                 <i class="fas fa-search"></i>
                             </div>
                             <div class="header__control-item">
@@ -493,11 +492,29 @@
         </header>
         <!-- end header -->
 
+        <!-- begin modal -->
+        <div id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-close">
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-content l-6 l-o-3">
+                <form action="">
+                    <div class="modal-content-input l-9">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="modal-content-btn l-3">
+                        <button type="button">Find now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- end modal -->
+
         <!-- begin slide -->
         <slide id="slide">
             <!-- main slide -->
             <div class="slide__main">
-                <div class="slide__overlay"></div>
                 <div id="owl-1" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="slide__img">
@@ -1308,5 +1325,6 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./assets/js/owlcarousel/owl.carousel.min.js"></script>
 <script src="./assets/js/slide.js"></script>
+<script src="./assets/js/script.js"></script>
 
 </html>

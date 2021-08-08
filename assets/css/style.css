@@ -76,7 +76,7 @@
     position: absolute;
     top: 300%;
     width: 170%;
-    background-color: #ccc;
+    background-color: var(--white);
     display: none;
     z-index: 2;
 }
@@ -156,7 +156,7 @@
     top: -9px;
     left: 100%;
     width: 100%;
-    background-color: #ccc;
+    background-color: var(--white);
     display: none;
 }
 
@@ -206,6 +206,8 @@
     right: 0;
     width: 300px;
     padding: 20px;
+    z-index: 2;
+    background-color: var(--white);
 }
 
 .header__control-product-list p {
@@ -277,15 +279,6 @@
 #owl-1 .slide__text {
     font-size: 1.8rem;
     line-height: 1.6;
-}
-
-#owl-1 .slide__overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: var(--main);
 }
 
 #owl-1 .owl-item.active img {
@@ -887,4 +880,70 @@
     background-color: var(--white);
     color: var(--black);
     cursor: pointer;
+}
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--main);
+    background-color: rgba(63, 208, 212, 0.85);
+    animation: fadeIn ease 0.5s both;
+}
+
+.modal-close {
+    float: right;
+    padding-top: 40px;
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 10rem;
+    display: block;
+    color: var(--white);
+}
+
+.modal-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+
+.modal-content form {
+    display: flex;
+    align-items: center;
+}
+
+.modal-content-input input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.modal-content-btn button {
+    display: block;
+    width: 100%;
+    padding: 24px;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--main);
+    color: var(--white);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.modal-content-btn button:hover {
+    background-color: #1cb6ba;
 }
