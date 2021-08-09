@@ -1,0 +1,163 @@
+/* mobile & tablet */
+@media (max-width: 1023px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+        /* for removing the highlight */
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    #header {
+        background-color: var(--main);
+        padding: 15px 0;
+    }
+
+    .header__mobile-tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__mobile-icon {
+        font-size: 2rem;
+        line-height: 2rem;
+        color: var(--white);
+    }
+
+    .header__mobile-logo-link {
+        display: block;
+        height: 40px;
+    }
+
+    .header__mobile-logo-link img {
+        height: 100%;
+    }
+
+    #owl-1 .owl-nav {
+        display: none;
+    }
+
+    .content__enjoy-column {
+        padding-bottom: 48px;
+    }
+
+    .content-4__sta {
+        padding: 0;
+    }
+
+    .content-5__col {
+        margin-bottom: 20px;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    #owl-1 .slide__img img {
+        height: 630px;
+    }
+
+    #owl-1 .slide__sub-heading {
+        font-size: 7.2rem;
+        line-height: 7.2rem;
+        margin: 20px 0;
+    }
+
+    #owl-1 .slide__text {
+        font-size: 1.7rem;
+    }
+
+    .content__reivew-sub-heading,
+    .content__section-sub-heading {
+        font-size: 5.8rem;
+        line-height: 5.8rem;
+    }
+
+    .content__reivew-text {
+        width: 100%;
+    }
+
+    .content-4__col {
+        padding: 40px 0;
+    }
+}
+
+/* mobile */
+@media (max-width: 740px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .app {
+        overflow: hidden;
+    }
+
+    .header__mobile-tablet {
+        margin: 0 20px;
+    }
+
+    #content-1,
+    #content-3,
+    #content-5,
+    .content__review-heading,
+    .footer__wrap,
+    .slide__content {
+        margin: 0 30px;
+    }
+
+    #owl-1 .slide__img img {
+        height: 450px;
+    }
+
+    #owl-1 .slide__heading {
+        font-size: 3.4rem;
+        line-height: 3.4rem;
+    }
+
+    #owl-1 .slide__sub-heading {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        margin: 40px 0;
+    }
+
+    #owl-1 .slide__text {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .content__reivew-sub-heading,
+    .content__section-sub-heading {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .content__reivew-text,
+    .content__section-text {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .content__reivew-text {
+        font-size: 1.7rem;
+        line-height: 1.6;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .content__parallax {
+        padding-bottom: 100px;
+    }
+
+    .footer__wrap-col {
+        margin-bottom: 20px;
+    }
+
+    .content-4__col {
+        padding: 20px;
+    }
+}

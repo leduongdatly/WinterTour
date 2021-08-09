@@ -33,10 +33,10 @@ $('#owl-2').owlCarousel({
         0: {
             items: 1
         },
-        600: {
-            items: 1
+        740: {
+            items: 2,
         },
-        1000: {
+        1024: {
             items: 4
         }
     }
@@ -53,13 +53,15 @@ $('#owl-3').owlCarousel({
     dotsSpeed: 1000,
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            dots: false,
         },
-        600: {
-            items: 3
+        768: {
+            items: 2,
+            dotsEach: 4,
         },
-        1000: {
-            items: 3
+        1024: {
+            items: 3,
         }
     }
 })
@@ -76,10 +78,10 @@ $('#owl-4').owlCarousel({
         0: {
             items: 1
         },
-        600: {
-            items: 3
+        740: {
+            items: 2
         },
-        1000: {
+        1024: {
             items: 4
         }
     }

@@ -57,3 +57,12 @@ window.addEventListener('click', (event) => {
         modalVideo.style.opacity = '0'
     }
 })
+
+// pause video on click modal
+const video = document.querySelector('iframe')
+
+window.addEventListener('click', () => {
+    const source = video.src
+    video.src = ''
+    video.src = source
+})
