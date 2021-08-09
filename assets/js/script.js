@@ -66,3 +66,25 @@ window.addEventListener('click', () => {
     video.src = ''
     video.src = source
 })
+
+// Scroll top btn
+var topBtn = document.getElementById("myBtn");
+
+window.addEventListener('scroll', () => {
+    scrollFunction()
+})
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        topBtn.style.visibility = 'visible'
+        topBtn.style.opacity = '1'
+    } else {
+        topBtn.style.visibility = 'hidden'
+        topBtn.style.opacity = '0'
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
